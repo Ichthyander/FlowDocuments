@@ -1,0 +1,219 @@
+﻿<Window x:Class="FlowDocuments.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlowDocuments"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <FlowDocumentScrollViewer>
+            <FlowDocument>
+                <Paragraph>
+                    <Run FontSize="30">Суточная норма калорий</Run>
+                </Paragraph>
+                <Paragraph>
+                    С количеством калорий все просто. Сложнее с их качеством, но об этом далее. Объем потребляемых калорий проще всего рассчитать по формуле Лайла Макдональда, также можно использовать калькуляторы из интернета (как правило, они базируются на этой же формуле).
+                </Paragraph>
+                <Table>
+                    <Table.Columns>
+                        <TableColumn/>
+                    </Table.Columns>
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Формула Лайла Макдональда:
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Вес * К = Суточная норма калорий.
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+                <Paragraph>
+                    Здесь вес – это вес вашего стройного тела за вычетом % жира, а К – количество калорий из расчета на 1 кг. Последний показатель зависит от пола отлета и скорости метаболизма.
+                </Paragraph>
+                <Paragraph>
+                    Сколько калорий нужно потреблять на 1 кг веса:
+                </Paragraph>
+                <List MarkerStyle="Circle">
+                    <ListItem>
+                        <Paragraph>
+                            Женщинам с медленным метаболизмом – 31 г.
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Женщинам с быстрым метаболизмом – 33 г.
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Мужчинам с медленным метаболизмом – 33 г.
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Мужчинам с быстрым метаболизмом – 35 г.
+                        </Paragraph>
+                    </ListItem>
+                </List>
+                <Paragraph>
+                    Предположим, что вы мужчина с быстрым обменом веществ. Ваш вес – 100 кг, объем жира – 20%. Соответственно, вес вашего стройного тела – 20 кг. Применяем формулу и получаем: 80 * 35 = 2800 ккал. Это и есть ваша суточная потребность в калориях. Но нам необходимо умножить ее на поправочный коэффициент запаса энергии 1.2, так как вы хотите набрать массу. Значит, потреблять придется 3360 ккал в сутки. Тогда вы сможете рассчитывать на наращивание до 2-2.5 кг мышечной массы за месяц.
+                </Paragraph>
+                <Paragraph>
+                    Если вы соблюдаете правила набора веса, но он не увеличивается, то вы недобираете калорий. Увеличьте их на 450-500 в сутки. Если набираете более 3 кг за месяц, то вы наращиваете и жировую массу – уменьшайте суточную калорийность рациона 350-400 г. Постоянно анализируйте ситуацию и корректируйте рацион в зависимости от показателей. Если вам не хватает опыта и знаний для объективной оценки текущей ситуации, то рекомендуем обратиться к вашему фитнес-тренеру.
+                </Paragraph>
+                <Paragraph>
+                    Примерная суточная калорийность рациона для набора массы
+                </Paragraph>
+                <Table>
+                    <Table.Columns>
+                        <TableColumn Width="0,2*"/>
+                        <TableColumn Width="0,4*"/>
+                        <TableColumn Width="0,4*"/>
+                    </Table.Columns>
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>Вес тела</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>Суточная калорийность, мужчины</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>Суточная калорийность, женщины</Paragraph>
+                            </TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>50 кг</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>2100</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>1860</Paragraph>
+                            </TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>55 кг</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>2310</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>2046</Paragraph>
+                            </TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>60 кг</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>2520</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>2232</Paragraph>
+                            </TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>65 кг</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>2730</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>2418</Paragraph>
+                            </TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>70 кг</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>2940</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>2604</Paragraph>
+                            </TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>75 кг</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>3150</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>2790</Paragraph>
+                            </TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>80 кг</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>3360</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>2976</Paragraph>
+                            </TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>85 кг</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>3780</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>3348</Paragraph>
+                            </TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>90 кг</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>3150</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>2790</Paragraph>
+                            </TableCell>
+                        </TableRow>
+
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>95 кг</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>3990</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>3534</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+    </Grid>
+</Window>
